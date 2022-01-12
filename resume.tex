@@ -1,0 +1,165 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Okan UYSAL}}\\
+	Kocaeli, TURKEY
+	\vspace{0.04cm}
+	\\
+	\raisebox{-0.2\height} {\Large \faPhoneSquare} \ \  +90 (507) 887-3913 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ uysal.okan.2010@gmail.com \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ github.com/OkanUysal 
+	\\
+	\raisebox{-0.2\height}{\Large \faLinkedinSquare} \ \ linkedin.com/in/okanuysal/ \raisebox{-0.2\height}{\Large \faGlobe} \ \ www.okanuysal.com
+\end{center}
+
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{TÜBİTAK}}
+	      {\textbf{Kocaeli, TURKEY}}
+	      \headerrow
+	      {\emph{Senior Software Engineer}}
+	      {\emph{October 2020 -- Present}}
+	      \begin{itemize*}
+	      	\item Leading a 7-person RTOS core team. As the core team, memory, communaction, scheduler, process/thread, smp ect. topics are being developed.
+	      	\item Taking part in the CI/CD studies of the project. Jenkins has been integrated into the system. It has been ensured that the products are more controlled and healthier.
+	      	\item Taking part in road map determination and design studies in the project.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{HUAWEI}}
+	      {\textbf{Istanbul, TURKEY}}
+	      \headerrow
+	      {\emph{Full Stack Developer}}
+	      {\emph{June 2020 -- Agust 2020}}
+	      \begin{itemize*}
+	      	\item Developed a captcha system. Due to company policy, open source captcha system was not used. Backend and frontend part has been improved.
+	      	\item Developed a media player that will display the videos stored in the database. By enabling it to send the files in a fragmented way, the download process is ensured to continue while watching large videos.
+	      	\item Performed many database operations. Frontend and backend improvements have been made. Designs were made considering the advanced stages of the project.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{TÜBİTAK}}
+	      {\textbf{Kocaeli, TURKEY}}
+	      \headerrow
+	      {\emph{Software Engineer, Core Developer}}
+	      {\emph{September 2019 -- May 2020}}
+	      \begin{itemize*}
+	      	\item Improved clock/timer package. CPU usage has been reduced from 30% to 5% in the number of max timers.
+	      	\item Design studies were carried out in the code tree of the project. Fixed unnecessary code snippets in profiles.
+	      	\item The system to catch the leaks in the project was developed and the leaks were fixed.
+	      \end{itemize*}
+	      \headerrow
+	      {\emph{Software Engineer, Test Automation Developer}}
+	      {\emph{December 2015 -- September 2019}}
+	      \begin{itemize*}
+	      	\item Developed full automatic tool for RTOS. This tool provided commination between host and target. So all written tests are run on the device and the results are reported in excel and html.
+	      	\item Developed many unit tests and helped improve the quality of the product.
+	      	\item Static analysis and dynamic analysis tools were integrated into the project within the scope of DO-178 Level A. LDRA was used as the tool.
+	      \end{itemize*}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Languages:}
+	      C, Java, Bash Script, Python.
+	\item \textbf{Software:}
+	      Git, Clearcase, LibGDX, Gradle, Spring Boot, Java SWT, Firebase, Selenium.
+	\item \textbf{Tools:}
+	      Eclipse, Android Studio, VS Code, WireShark, Github.
+	\item \textbf{Certificates:}
+	      ISO-26262 Functional Safety -TUV Nord, 1.National Blockchain Workshop - TÜBİTAK BİLGEM, ARM Cortex-R4 Software Design - Doulos, Intel x86 Assembly Language and Architecture - MindShare.
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{Hacettepe University}}
+	      {\textbf{Ankara, TURKEY}}
+	      \headerrow
+	      {\emph{B.S. Computer Science} (\textbf{GPA:} 2.78/4.00)}
+	      {\emph{September 2010 -- August 2015}}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Interest}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Sport:}
+	      Table tennis, Running, Hiking.
+	\item \textbf{E-Sport:}
+	      Watch E-Sport, Play PC Games
+	\item \textbf{Develop Mobile Apps:}
+	      Educational Apps, Strategy Games, Finance Apps.
+\end{itemize}
+
+\end{document}
